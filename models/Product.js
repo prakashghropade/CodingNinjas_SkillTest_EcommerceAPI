@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+// Products Schema for the crating the Product Model
 
 const productSchema = new mongoose.Schema({
 
@@ -13,5 +14,7 @@ const productSchema = new mongoose.Schema({
         required: true
     }
 })
+
+// Here we have create the product model from the Product schema
 
 export const Product = mongoose.model('Product', productSchema);

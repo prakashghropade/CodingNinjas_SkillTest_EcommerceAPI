@@ -1,5 +1,7 @@
 import { Product } from "../models/Product.js";
 
+
+// create prodcut controller
 export const createProduct = async (req, res) => {
   try {
     console.log(req.body);
@@ -33,6 +35,9 @@ export const createProduct = async (req, res) => {
   }
 };
 
+
+//get all Products controller
+
 export const getAllProducts = async (req, res) => {
   try {
     const products = await Product.find();
@@ -57,6 +62,8 @@ export const getAllProducts = async (req, res) => {
     });
   }
 };
+
+// Update product controller
 
 export const updateProduct = async (req, res) => {
   const productId = req.params.id;
@@ -90,6 +97,10 @@ export const updateProduct = async (req, res) => {
     });
   }
 };
+
+
+
+// Delete Products controller
 
 export const deleteProduct = async (req, res) => {
   try {

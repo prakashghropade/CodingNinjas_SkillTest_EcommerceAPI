@@ -3,6 +3,8 @@ import { Router} from "express";
 
 const router = Router();
 
+
+// Routes for the create, get, update, and delete the products for the databse
 router.post("/products/create", createProduct);
 router.get("/products", getAllProducts);
 router.delete("/products/:id", deleteProduct);
