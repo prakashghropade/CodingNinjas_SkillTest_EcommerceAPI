@@ -1,8 +1,8 @@
-#Install dependencies:
+# Install dependencies:
 
-##Run the following command to install the required dependencies:
+## Run the following command to install the required dependencies:
 
-###npm install
+### npm install
 
 
 Set up the database:
